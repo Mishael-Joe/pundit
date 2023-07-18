@@ -99,7 +99,7 @@ const LoginForm = () => {
 
                                 </form>
 
-                                <p className="mt-6 text-sm text-center text-gray-200">Don&#x27;t have an account yet? <Link href="./SignUp" className="text-green-500 font-semibold focus:outline-none focus:underline hover:underline">Register</Link>.</p>
+                                <p className="mt-6 text-sm text-center text-gray-200">Don&#x27;t have an account yet? <Link href="./signup" className="text-green-500 font-semibold focus:outline-none focus:underline hover:underline">Register</Link>.</p>
                             </div>
                         </div>
                     </div>

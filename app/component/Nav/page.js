@@ -111,19 +111,19 @@ function App() {
 }
 
 function List() {
-  const listItems = navHeaderLinks.map((link) => (
-    <li key={link.id} className="hover:text-green-600">
+  const listItems = navHeaderLinks.map((link, isActive) => (
+    <li key={link.id} className={`hover:text-green-400 ${isActive ? 'text-slate-900' : 'text-green-400'}`}>
       <Link href={link.href}>{link.label}</Link>
     </li>
   ));
 
-  return <ul className="hidden space-x-4 md:flex font-semibold pt-2">{listItems}</ul>;
+  return <ul className="hidden space-x-4 md:flex font-semibold -mt-12">{listItems}</ul>;
 }
 
 function Login() {
   return (
     <button className="text-green-500 font-semibold pr-4">
-      <Link href="./source/login">LOGIN</Link>
+      <Link href="./login">LOGIN</Link>
     </button>
   );
 }
@@ -131,7 +131,7 @@ function Login() {
 function Register() {
   return (
     <button className="text-green-500 font-semibold">
-      <Link href="./source/SignUp">REGISTER</Link>
+      <Link href="./signup">REGISTER</Link>
     </button>
   );
 }
@@ -144,7 +144,7 @@ function PunditBrandImage() {
         alt="pundit brand image"
         width="150"
         height="50"
-        className=" -mt-14"
+        className=" -mt-11"
       />
     </Link>
   );
@@ -155,7 +155,7 @@ export default function Nav() {
     <nav className="flex items-start justify-between">
       <PunditBrandImage />
       <List />
-      <div className="hidden md:inline pt-2">
+      <div className="hidden md:inline -mt-12">
         <Login />
         <Register />
       </div>

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400&display=swap');
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+.Good_Education_To_Life {
+    padding: .5rem 2rem;
+}
+
+.Section__title {
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+}
+
+.WriteUp__font {
+    font-family: 'Rubik', sans-serif;
+}
+
+.a {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

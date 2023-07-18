@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400&display=swap');
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+.relatively_Position__Items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green__text {
+    font-family: 'Roboto Slab', serif;
+}
+
+.h2__text {
+    font-family: 'Rubik', sans-serif;
+}
+

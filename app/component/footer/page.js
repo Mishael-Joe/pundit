@@ -74,7 +74,7 @@ function Footer() {
   return (
     <div className="flex__Footer">
       <div>
-        <div className="pundit__Footer">Pundit</div>
+        <div className="pundit__Footer text-4xl text-green-500">Pundit</div>
         <FooterWriteUp styles="pundit__Footer" />
         <div className="socialMedia__flex">
           <SocialMediaIcon icon={footerWriteUp.socialMediaLinks.FaceBook} />

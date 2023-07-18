@@ -63,7 +63,7 @@ const FirstTimeVisitor = () => {
                 
             </div>
 
-            <div className='text-center'><Link href={'../source/SignUp'}><button onClick={handleSignUp} className='bg-green-400 p-2 rounded-md text-slate-100 font-semibold'>Sign Up</button></Link></div>
+            <div className='text-center'><Link href={'../signup'}><button onClick={handleSignUp} className='bg-green-400 p-2 rounded-md text-slate-100 font-semibold'>Sign Up</button></Link></div>
         </div>
         
       );

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400&display=swap');
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+.Item__writeUp {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.Item__price {
+    font-weight: 700;
+    padding-left: .6rem;
+    color: green;
+    font-size: .8rem;
+}
+
+.flex {
+    padding-top: -1rem;
+    padding-bottom: .4rem;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.Item__rating {
+    font-weight: 700;
+    padding-right: .6rem;
+    color: green;
+    font-size: .8rem;
+    display:  flex;
+    align-items: center;
+}
+
+.Item__duration {
+    font-weight: 500;
+    padding-left: .5rem;
+    font-size: .9rem;
+    font-family: 'Inconsolata', monospace;
+    width: fit-content;
+}
+
+.Item__coursesSoldTo {
+    font-weight: 500;
+    padding-right: .5rem;
+    font-size: .9rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.g {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    padding: 1rem 3rem;
+}
+
+
+@media screen and (min-width: 460px) {
+    .g{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .g{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
