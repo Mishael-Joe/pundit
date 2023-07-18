@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
