@@ -1,58 +1,64 @@
 import Image from "next/image";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-// Default theme
-import '@splidejs/react-splide/css';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/bundle'
 
 function All_Swipers() {
     return (
         <section>
-            <Splide 
-            options={{
-                cover: true,
-                heightRatio: 0.3,
-                autoplay: true,
-                interval: 2000,
-                focus: "center",
-                rewind: true,
-                perPage: 3,
-                gap   : 8,
-                breakpoints : {
-                    600: {
-                        perPage: 2,
-                        heightRatio: 0.5,
-                    }
+            <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            navigation
+            a11y={true}
+            pagination={{ clickable: true }}
+            spaceBetween={20}
+            breakpoints={{
+                // 700px and up shows 2 slides
+                200: {
+                    slidesPerView: 1
+                },
+                400: {
+                    slidesPerView: 2
+                },
+                750: {
+                    slidesPerView: 3
+                },
+                // 1200px and up shows 3 slides
+                700: {
+                    slidesPerView: 2
                 }
             }}
-            aria-label="My Favorite Images">
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-vlada-karpovich-7433882.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>MARKETING</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-edward-jenner-4033148.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>DESIGN</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-lukas-577210.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>DATA ANALYSIS</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-picjumbocom-196646.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>BUSINESS</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-tima-miroshnichenko-5380643.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>ETHICAL HARKING</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/popular-courses/pexels-andrea-piacquadio-755050.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>DESIGN</span>
-            </SplideSlide>
-            <SplideSlide>
-                <Image src={'/Assets/IMG_20230610_123949.jpg'} height={'200'} width={'200'} quality={100} alt="Image 1"/>
-                <span className={`p-2 bg-green-200 m-2 rounded-md font-semibold`}>DESIGN</span>
-            </SplideSlide>
-            </Splide>
+            >
+                <SwiperSlide>
+                    <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-vlada-karpovich-7433882.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                    <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>MARKETING</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-edward-jenner-4033148.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                        <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>DESIGN</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-lukas-577210.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                        <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>DATA ANALYSIS</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-picjumbocom-196646.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                        <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>BUSINESS</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-tima-miroshnichenko-5380643.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                        <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>ETHICAL HARKING</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-andrea-piacquadio-755050.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
+                        <span className={`p-2 absolute top-1 bg-green-200 m-2 rounded-md font-semibold`}>DESIGN</span>
+                </SwiperSlide>
+            </Swiper>
         </section>
     )
 }

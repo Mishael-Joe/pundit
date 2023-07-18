@@ -4,10 +4,10 @@ import Image from 'next/image'
 import Nav from './component/Nav/page'
 import Footer from './component/footer/page'
 import AllSwiperSlides from './maincontent/splideJS/page'
-
+//className="flex min-h-screen flex-col items-center justify-between p-24"
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main >
       <Nav />
       <AllSwiperSlides />
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
