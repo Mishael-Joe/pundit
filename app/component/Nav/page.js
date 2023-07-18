@@ -117,7 +117,7 @@ function List() {
     </li>
   ));
 
-  return <ul className="hidden space-x-4 md:flex font-semibold">{listItems}</ul>;
+  return <ul className="hidden space-x-4 md:flex font-semibold pt-2">{listItems}</ul>;
 }
 
 function Login() {
@@ -144,7 +144,7 @@ function PunditBrandImage() {
         alt="pundit brand image"
         width="150"
         height="50"
-        className=""
+        className=" -mt-14"
       />
     </Link>
   );
@@ -152,10 +152,10 @@ function PunditBrandImage() {
 
 export default function Nav() {
   return (
-    <nav className="flex items-start justify-between -mt-12">
+    <nav className="flex items-start justify-between">
       <PunditBrandImage />
       <List />
-      <div className="hidden md:inline">
+      <div className="hidden md:inline pt-2">
         <Login />
         <Register />
       </div>
