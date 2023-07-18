@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400&display=swap');
+
+.flex__Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.937);
+    color: white;
+    padding: 1.5rem 0;
+}
+
+.onHover:hover {
+    color: green;
+}
+
+.socialMedia__flex {
+    display: flex;
+    color: green;
+    padding: .8rem .5rem;
+}
+
+.pundit__Footer {
+    width: 12rem;
+    padding: 0 .8rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.list__items {
+    padding: 0 .8rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (min-width: 460px) {
+    .flex__Footer {
+        flex-direction: row;
+    }
+}

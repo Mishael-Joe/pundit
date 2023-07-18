@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image'
+import Footer from './component/footer/page'
 
 export default function Home() {
   return (
@@ -109,6 +112,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+            <Footer />
     </main>
   )
 }
