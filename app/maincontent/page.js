@@ -15,7 +15,7 @@ export default function MainContent() {
         <AllSwiperSlides />
         <PopularCourses__grid />
         <GoodEducation />
-        <StudentsOppinion />
+        {/* <StudentsOppinion /> */}
         <Our__instructors />
         <FirstStep />
     </main>

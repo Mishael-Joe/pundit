@@ -29,9 +29,8 @@ const instructors = [
 
 function Cards(pros) {
     return (
-        <figure class=" hover:scale-105 hover:shadow-2xl lg:w-72 h-80 hover:bg-green-100 rounded-xl group dark:bg-slate-800 text-center p-3 shadow-lg">
+        <figure class=" hover:scale-105 hover:shadow-2xl lg:w-72 h-fit hover:bg-green-100 rounded-xl group dark:bg-slate-800 text-center p-3 shadow-lg">
             <Image src={pros.src} className="mx-auto w-20 rounded-full" quality={100} width={400} height={30} alt="" />
-            {/* <img class="w-24 h-24 rounded-full mx-auto group-hover:border-2 group-hover:border-green-400"  src={pros.src}  width="384" height="512"/> */}
             <div class="pt-6 space-y-4">
                 <figcaption>
                     <div className={`font-bold text-lg md:text-base`}>

@@ -39,27 +39,27 @@ function All_Swipers() {
             >
                 <SwiperSlide>
                     <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-vlada-karpovich-7433882.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                    <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>MARKETING</span>
+                    <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>MARKETING</span>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-edward-jenner-4033148.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                        <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>DESIGN</span>
+                        <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>DESIGN</span>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-lukas-577210.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                        <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>DATA ANALYSIS</span>
+                        <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>DATA ANALYSIS</span>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-picjumbocom-196646.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                        <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>BUSINESS</span>
+                        <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>BUSINESS</span>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-tima-miroshnichenko-5380643.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                        <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>ETHICAL HARKING</span>
+                        <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>ETHICAL HARKING</span>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Image className=" w-96 relative rounded-md" src={'/Assets/popular-courses/pexels-andrea-piacquadio-755050.jpg'} height={'200'} width={'800'} quality={100} alt="Image 1"/>
-                        <span className={`p-2 absolute top-1 bg-green-400 m-2 rounded-md font-semibold`}>DESIGN</span>
+                        <span className={`absolute top-1 text-xs bg-green-400 rounded p-1 left-1 font-semibold`}>DESIGN</span>
                 </SwiperSlide>
             </Swiper>
         </section>

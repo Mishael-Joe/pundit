@@ -77,6 +77,8 @@ function HamburgerMenu() {
       {isOpen && (
         <ul className="font-semibold bg-slate-200 p-2 rounded-md">
           {responsiveListItems}
+          <Link href="./login" className="pl-2 pb-2">Login</Link> <br />
+          <Link href="./signup" className="pl-2">Register</Link>
         </ul>
       )}
     </div>

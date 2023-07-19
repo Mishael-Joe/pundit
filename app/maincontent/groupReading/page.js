@@ -2,7 +2,7 @@ import './styles.css'
 
 function GroupReading() {
     function Button({pros}) {
-        return <button className={"bg-green-300 hover:bg-green-400 rounded-md p-1 font-semibold"}>{pros}</button>
+        return <button className={"bg-green-300 hover:bg-green-400 rounded-md max-w-md p-2 font-semibold"}>{pros}</button>
     }
 
     return (

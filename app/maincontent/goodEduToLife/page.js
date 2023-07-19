@@ -18,7 +18,7 @@ function Container() {
         <div className="flex flex-col gap-10 md:gap-20 sm:flex-row md:items-center md:justify-around">
             <div className="relative">
                 <Image className="rounded-md w-auto md:left-20 md:relative" quality={100} src="/Assets/pexels-christina-morillo-1181672.jpg" width={200} height={100} alt="sdf"/>
-                <span className="absolute md:font-semibold z-10 top-10 p-2 text-sm bg-slate-200 -left-10 w-28 text-center rounded-md shadow-2xl md:left-5"><span className="text-green-400 text-lg font-semibold">Job</span> Opportunities</span>
+                <span className="absolute sm:font-semibold z-10 top-10 p-2 text-sm bg-slate-200 -left-10 w-28 text-center rounded-md shadow-2xl md:left-5"><span className="text-green-400 text-lg font-semibold">Job</span> Opportunities</span>
             </div>
             <div className="md:relative lg:right-20">
                 <div className="pb-5 font-semibold md:text-2xl">
