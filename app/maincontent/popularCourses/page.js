@@ -9,9 +9,9 @@ export default function PopularCourses__grid() {
         )
     })
     return (
-        <section className={``}>
+        <section className={`dark:bg-[#0c2313fa] dark:text-slate-100 transition ease-in-out delay-100`}>
             <h1 className={`font-semibold pl-12`}>Most Popular Courses</h1>
-            <div className={`g gap-4`}> {popularCourses} </div>
+            <div className={`grid__section gap-4`}> {popularCourses} </div>
         </section>
     )
 }

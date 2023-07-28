@@ -1,4 +1,5 @@
 import Image from "next/image"
+import './styles.css'
 
 const instructors = [
     {
@@ -29,8 +30,8 @@ const instructors = [
 
 function Cards(pros) {
     return (
-        <figure class="hover:scale-105 hover:shadow-2xl lg:w-72 h-fit hover:bg-green-100 rounded-xl group text-center p-3 shadow-lg">
-            <Image src={pros.src} className="mx-auto w-20 rounded-full" quality={100} width={400} height={30} alt="" />
+        <figure class="hover:scale-105 hover:shadow-2xl lg:w-72 hover:bg-green-100 dark:bg-green-900 rounded-xl group text-center p-3 shadow-lg">
+            <Image src={pros.src} className="mx-auto w-16 rounded-full" quality={100} width={400} height={30} alt="" />
             <div class="pt-6 space-y-4">
                 <figcaption>
                     <div className={`font-bold text-lg md:text-base`}>
@@ -56,10 +57,11 @@ export default function Our__instructors() {
             <Cards key={person.id} {...person}/>
         )
     })
+    
     return (
-        <section className={`p-10 md:pb-32`}>
+        <section className={`p-10 md:pb-32 dark:bg-[#0c2313fa] dark:text-slate-100 transition ease-in-out delay-100`}>
             <h1 className={`text-xl font-bold pb-10`}>Meet our instructors</h1>
-            <div className={`flex flex-col gap-5  sm:flex-row`}>
+            <div className={`gri gap-5`}>
                 {meetOurInstructors}
             </div>
         </section>

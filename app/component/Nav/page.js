@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react";
+import Theme from "@/app/utils/ThemeSetting/page";
 import Link from "next/link";
-import Image from "next/image";
 
 const navHeaderLinks = [
   { id: 1, label: "Home", href: "#" },
@@ -75,7 +75,7 @@ function HamburgerMenu() {
         )}
       </button>
       {isOpen && (
-        <ul className="font-semibold bg-slate-200 p-2 rounded-md">
+        <ul className="font-semibold bg-slate-200 dark:bg-green-900 p-2 rounded-md transition">
           {responsiveListItems}
           <Link href="./login" className="pl-2 pb-2">Login</Link> <br />
           <Link href="./signup" className="pl-2">Register</Link>
@@ -114,12 +114,12 @@ function App() {
 
 function List() {
   const listItems = navHeaderLinks.map((link, isActive) => (
-    <li key={link.id} className={`hover:text-green-400 ${isActive ? 'text-slate-900' : 'text-green-400'}`}>
+    <li key={link.id} className={`hover:text-green-400 dark:hover:text-green-400 ${isActive ? 'text-slate-900' : 'text-green-400'} dark:text-slate-100 transition ease-in-out delay-100`}>
       <Link href={link.href}>{link.label}</Link>
     </li>
   ));
 
-  return <ul className="hidden space-x-4 md:flex font-semibold -mt-12">{listItems}</ul>;
+  return <ul className="hidden space-x-4 md:flex font-semibold">{listItems}</ul>;
 }
 
 function Login() {
@@ -140,24 +140,17 @@ function Register() {
 
 function PunditBrandImage() {
   return (
-    <Link href="#">
-      <Image
-        src="/pundit.svg"
-        alt="pundit brand image"
-        width="150"
-        height="50"
-        className=" -mt-11"
-      />
-    </Link>
+    <Link href="#" className="pl-5 font-Rubik font-bold text-xl dark:text-green-400 transition ease-in-out delay-100"> WiSchool </Link>
   );
 }
 
 export default function Nav() {
   return (
-    <nav className="flex items-start justify-between">
+    <nav className="flex sticky pt-4 top-0 z-10 backdrop-blur-3xl items-start justify-between h-14 dark:bg-green-950 transition ease-in-out delay-100">
       <PunditBrandImage />
       <List />
-      <div className="hidden md:inline -mt-12">
+      <Theme />
+      <div className="hidden md:inline">
         <Login />
         <Register />
       </div>

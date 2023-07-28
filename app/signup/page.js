@@ -47,7 +47,7 @@ const SignUpForm = () => {
                 <div className="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
                     <div className="w-full">
                         <h1 className="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
-                            WELCOME TO <span className="text-green-500">PUNDIT</span>
+                            WELCOME TO <Link href={``}><span className="text-green-500">WiSchool</span></Link>
                         </h1>
 
                         <p className="mt-4 text-gray-500 dark:text-gray-400">

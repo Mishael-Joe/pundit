@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -36,7 +35,7 @@ const LoginForm = () => {
                     <div className="hidden bg-cover md:block md:w-2/4 bg-[url(https://images.unsplash.com/photo-1616763355603-9755a640a287?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)]">
                         <div className="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
                             <div>
-                                <h2 className="text-4xl text-slate-100 font-bold sm:text-3xl">PUNDIT</h2>
+                                <h2 className="text-4xl text-slate-100 font-bold sm:text-3xl">WiSchool</h2>
 
                                 <p className="max-w-xl mt-3 text-gray-300">
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
@@ -51,7 +50,7 @@ const LoginForm = () => {
                         <div className="flex-1">
                             <div className="text-center">
                                 <div className="flex justify-center mx-auto">
-                                    <Image className="w-auto h-32 -mt-10" width={200} height={7} src='/Assets/profile.png' alt=""/>
+                                    <Link href={``}><h1 className="text-green-600 text-2xl font-bold">WiSchool</h1></Link>
                                 </div>
 
                                 <p className="mt-3 text-gray-300 dark:text-gray-300">Sign in to access your account</p>
