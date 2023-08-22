@@ -20,6 +20,10 @@ module.exports = {
         Roboto: ['Roboto Slab', 'serif'],
         Rubik: ['Rubik', 'sans-serif'],
       },
+      screens: {
+        'mobile': '480px',
+        'hide': '819'
+      }
     },
   },
   plugins: [],

@@ -8,6 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --transparent-light-color: rgba(255, 255, 255, 0.411);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,7 +19,7 @@
   }
 } */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -26,4 +27,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.bg_color {
+  /* background-color: rgb(220 252 231); */
+  box-shadow: 0 1px .5rem var(--transparent-light-color);
 }

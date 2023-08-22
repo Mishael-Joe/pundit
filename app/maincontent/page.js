@@ -3,7 +3,7 @@ import Quality__Education from "./quality__education/page"
 import Button from "./groupReading/page"
 import PopularCourses__grid from "./popularCourses/page"
 import GoodEducation from "./goodEduToLife/page"
-import StudentsOppinion from "./studentsOpinion/page"
+import Reviews from "./reviews/page"
 import Our__instructors from "./our__Instructors/page"
 import FirstStep from "./takeTheFirstStep/page"
 
@@ -15,7 +15,7 @@ export default function MainContent() {
         <AllSwiperSlides />
         <PopularCourses__grid />
         <GoodEducation />
-        {/* <StudentsOppinion /> */}
+        <Reviews />
         <Our__instructors />
         <FirstStep />
     </main>

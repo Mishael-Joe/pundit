@@ -120,11 +120,11 @@ function Footer() {
         <FooterLinks />
       </div>
       <div>
-        <div class="py-5 bg-[#252830] dark:bg-[#131417] flex items-center justify-center flex-col">
+        <div class="py-5 px-4 bg-[#252830] dark:bg-[#131417] flex items-center justify-center flex-col">
           <h1 className="text-slate-100">Subscribe to get the latest updates</h1>
           <div className="flex items-end">
-          <input type="email" placeholder="Your Email address" class="block mx-auto w-auto py-2.5 text-gray-700 font-semibold placeholder-green-400 bg-slate-200 border border-green-400 rounded-s-md ps-3 rtl:pr-11 rtl:pl-5 mt-3" />
-          <span className="text-xs font-semibold text-slate-100 bg-green-500 rounded-e-md p-[15px] cursor-pointer">SUBSCRIBE</span>
+            <input type="email" placeholder="Your Email address" class="block w-[130px] mx-auto mobile:w-auto py-2.5 text-gray-700 font-semibold placeholder-green-400 bg-slate-200 border border-green-400 rounded-s-md ps-3 rtl:pr-11 rtl:pl-5 mt-3" />
+            <span className="text-xs font-semibold text-slate-100 bg-green-500 rounded-e-md p-[15px] cursor-pointer">SUBSCRIBE</span>
           </div>
         </div>
       </div>
