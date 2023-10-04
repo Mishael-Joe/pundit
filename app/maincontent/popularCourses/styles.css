@@ -1,0 +1,6 @@
+@media (min-width: 890px) {
+    .yyy {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

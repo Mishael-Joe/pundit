@@ -11,7 +11,7 @@ const navHeaderLinks = [
   { id: 2, label: "Courses", href: "#" },
   { id: 3, label: "Instructors", href: "#" },
   { id: 4, label: "Schedules", href: "#" },
-  { id: 5, label: "Contact Us", href: "#" }
+  { id: 5, label: "Contact", href: "#" }
 ];
 
 function List() {

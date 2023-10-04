@@ -57,7 +57,7 @@ const FirstTimeVisitor = () => {
             <button onClick={handleClose} className={`absolute right-5`}><CloseMenu__Icon/></button>
 
             <div className="mt-2">
-                <h1 className='text-xl md:text-2xl text-center font-semibold'>Welcome to <span className='font-semibold text-green-600'>PUNDIT</span></h1>
+                <h1 className='text-xl md:text-2xl text-center font-semibold'>Welcome to <span className='font-semibold text-green-600'>WiSchool</span></h1>
                 <p className="md:text-lg font-bold text-gray-700 dark:dark:text-slate-100 transition ease-in-out delay-100">Unlimited Learning Materials Available Just For You</p>
                 <p className="mt-2 font-semibold text-gray-600 dark:dark:text-slate-100 transition ease-in-out delay-100">You are a first-time visitor. Would you like to sign up?</p>
                 

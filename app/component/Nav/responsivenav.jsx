@@ -104,7 +104,7 @@ function ResponsiveNav() {
                         <div className="flex items-center justify-between mt-6">
                             <a href="#" className="flex items-center gap-x-2">
                                 <CgProfile />
-                                <span className="text-sm font-medium text-gray-700 dark:text-gray-200">Sing In</span>
+                                <span className="text-sm font-medium text-gray-700 dark:text-gray-200">Sign In</span>
                             </a>
                             
                             <a href="#" className="text-gray-500 transition-colors duration-200 rotate-180 dark:text-gray-400 rtl:rotate-0 hover:text-blue-500 dark:hover:text-blue-400">
